@@ -1,0 +1,5 @@
+library(xlsx)
+library(readxl)
+library(tseries)
+data <- read_xlsx("C:/gcloud5/Work/AIECON/postdoc/data/20190531_numerical.xlsx")
+adf.test(data, alternative = c("period"))
